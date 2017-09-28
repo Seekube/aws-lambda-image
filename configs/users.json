@@ -1,0 +1,8 @@
+{
+  "bucket": "dev.cdn.seekube.com",
+  "acl": "public-read",
+  "backup": {
+    "directory": ".",
+    "move": true
+  }
+}
