@@ -28,7 +28,7 @@ exports.handler = (event, context, callback) => {
 };
 
 function process(s3Object, callback) {
-    const configPath = path.resolve(__dirname, "config.json");
+    const configPath = path.resolve(__dirname + '/configs', process.env.CONFIG_AWS_LAMBDA || "config.json");
     const fileSystem = new S3FileSystem();
     const processor  = new ImageProcessor(fileSystem, s3Object);
     const config     = new Config(
