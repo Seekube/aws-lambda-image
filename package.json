@@ -6,7 +6,7 @@
     "name": "aws-lambda-image",
     "role": "aws-lambda-image-executor",
     "profile": "default",
-    "region": "eu-west-1",
+    "region": "eu-central-1",
     "memory": "1280",
     "timeout": "5"
   },
